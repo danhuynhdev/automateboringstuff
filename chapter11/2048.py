@@ -14,7 +14,7 @@ while True:
     htmlElem.send_keys(Keys.LEFT)
 
     try:
-        browser.find_element_by_css_selector('div.game-over')
+        html = browser.find_element_by_css_selector('div.game-over')
     except NoSuchElementException:
         continue
     else:
